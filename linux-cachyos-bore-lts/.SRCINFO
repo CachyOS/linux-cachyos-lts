@@ -1,6 +1,6 @@
-pkgbase = linux-cachyos-bore-lts-lto
+pkgbase = linux-cachyos-bore-lts
 	pkgdesc = Linux BORE scheduler Kernel by CachyOS and with some other patches and other improvements
-	pkgver = 5.15.13
+	pkgver = 5.15.14
 	pkgrel = 1
 	url = https://github.com/CachyOS/linux-cachyos
 	arch = x86_64
@@ -18,16 +18,8 @@ pkgbase = linux-cachyos-bore-lts-lto
 	makedepends = perl
 	makedepends = tar
 	makedepends = xz
-	makedepends = clang
-	makedepends = llvm
-	makedepends = lld
-	makedepends = python
-	depends = clang
-	depends = llvm
-	depends = lld
-	depends = python
 	options = !strip
-	source = https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.13.tar.xz
+	source = https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.14.tar.xz
 	source = config
 	source = https://raw.githubusercontent.com/ptr1337/kernel-patches/master/5.15/bore/0001-bore-sched.patch
 	source = https://raw.githubusercontent.com/ptr1337/kernel-patches/master/5.15/0001-arch-patches.patch
@@ -60,7 +52,7 @@ pkgbase = linux-cachyos-bore-lts-lto
 	source = https://raw.githubusercontent.com/ptr1337/kernel-patches/master/5.15/0001-sbitmap-patches.patch
 	source = https://raw.githubusercontent.com/ptr1337/kernel-patches/master/5.15/0001-zstd.patch
 	source = auto-cpu-optimization.sh
-	md5sums = 4423a9fc25fcaa9e562c0f28e03960b3
+	md5sums = 22cb330e3cede400eeef0a0d93454123
 	md5sums = 5402af533ceb55bf08d42d626889c33f
 	md5sums = f98ffed5a49d131e97ca6cb3ddb37047
 	md5sums = ef9fa3407854cea8e78112c25bb72e41
@@ -94,7 +86,7 @@ pkgbase = linux-cachyos-bore-lts-lto
 	md5sums = 940d98858e6e59ecc07da50e05f6bc3d
 	md5sums = 21c98f19e883879dd3336c1fa143fd31
 
-pkgname = linux-cachyos-bore-lts-lto
+pkgname = linux-cachyos-bore-lts
 	pkgdesc = The Linux BORE scheduler Kernel by CachyOS and with some other patches and other improvements kernel and modules
 	depends = coreutils
 	depends = kmod
@@ -105,7 +97,7 @@ pkgname = linux-cachyos-bore-lts-lto
 	provides = VIRTUALBOX-GUEST-MODULES
 	provides = WIREGUARD-MODULE
 
-pkgname = linux-cachyos-bore-lts-lto-headers
+pkgname = linux-cachyos-bore-lts-headers
 	pkgdesc = Headers and scripts for building modules for the Linux BORE scheduler Kernel by CachyOS and with some other patches and other improvements
-	depends = linux-cachyos-bore-lts-lto=5.15.13
+	depends = linux-cachyos-bore-lts=5.15.14
 	depends = pahole

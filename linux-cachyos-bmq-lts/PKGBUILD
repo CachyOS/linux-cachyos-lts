@@ -122,7 +122,7 @@ else
   pkgbase=linux-cachyos-bmq-lts
 fi
 _major=5.15
-_minor=13
+_minor=14
 pkgver=${_major}.${_minor}
 _srcname=linux-${pkgver}
 arch=(x86_64 x86_64_v3)
@@ -672,7 +672,7 @@ for _p in "${pkgname[@]}"; do
 done
 
 
-md5sums=('4423a9fc25fcaa9e562c0f28e03960b3'
+md5sums=('22cb330e3cede400eeef0a0d93454123'
          '788dcd568f1c00441ad9746706e4f1bc'
          '25fe602949e5b92d08df96e55e418d7a'
          'ef9fa3407854cea8e78112c25bb72e41'
