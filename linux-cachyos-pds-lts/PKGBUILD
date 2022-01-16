@@ -117,12 +117,12 @@ _use_cfi=
 
 
 if [ -n "$_use_llvm_lto" ]; then
-  pkgbase=linux-cachyos-lts-pds-lto
+  pkgbase=linux-cachyos-pds-lts-lto
 else
   pkgbase=linux-cachyos-pds-lts
 fi
 _major=5.15
-_minor=14
+_minor=15
 pkgver=${_major}.${_minor}
 _srcname=linux-${pkgver}
 arch=(x86_64 x86_64_v3)
@@ -672,7 +672,7 @@ for _p in "${pkgname[@]}"; do
 done
 
 
-md5sums=('22cb330e3cede400eeef0a0d93454123'
+md5sums=('6ffbfb14a88d7b55f96efbc87c9fbfca'
          '788dcd568f1c00441ad9746706e4f1bc'
          '25fe602949e5b92d08df96e55e418d7a'
          'ef9fa3407854cea8e78112c25bb72e41'

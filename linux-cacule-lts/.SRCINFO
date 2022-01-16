@@ -1,6 +1,6 @@
 pkgbase = linux-cacule-lts
 	pkgdesc = Linux CacULE scheduler Kernel by CachyOS and with some other patches and other improvements
-	pkgver = 5.15.13
+	pkgver = 5.15.15
 	pkgrel = 1
 	url = https://github.com/CachyOS/linux-cachyos
 	arch = x86_64
@@ -19,7 +19,7 @@ pkgbase = linux-cacule-lts
 	makedepends = tar
 	makedepends = xz
 	options = !strip
-	source = https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.13.tar.xz
+	source = https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.15.tar.xz
 	source = config
 	source = https://raw.githubusercontent.com/ptr1337/kernel-patches/master/5.15/cacule/cacule-5.15-full.patch
 	source = https://raw.githubusercontent.com/ptr1337/kernel-patches/master/5.15/0001-arch-patches.patch
@@ -52,7 +52,7 @@ pkgbase = linux-cacule-lts
 	source = https://raw.githubusercontent.com/ptr1337/kernel-patches/master/5.15/0001-sbitmap-patches.patch
 	source = https://raw.githubusercontent.com/ptr1337/kernel-patches/master/5.15/0001-zstd.patch
 	source = auto-cpu-optimization.sh
-	md5sums = 4423a9fc25fcaa9e562c0f28e03960b3
+	md5sums = 6ffbfb14a88d7b55f96efbc87c9fbfca
 	md5sums = 788dcd568f1c00441ad9746706e4f1bc
 	md5sums = afdbe964cd00357ef7248553ab9db091
 	md5sums = ef9fa3407854cea8e78112c25bb72e41
@@ -99,5 +99,5 @@ pkgname = linux-cacule-lts
 
 pkgname = linux-cacule-lts-headers
 	pkgdesc = Headers and scripts for building modules for the Linux CacULE scheduler Kernel by CachyOS and with some other patches and other improvements
-	depends = linux-cacule-lts=5.15.13
+	depends = linux-cacule-lts=5.15.15
 	depends = pahole
