@@ -1,6 +1,6 @@
 pkgbase = linux-cachyos-bore-lts
 	pkgdesc = Linux BORE scheduler Kernel by CachyOS and with some other patches and other improvements
-	pkgver = 5.15.16
+	pkgver = 5.15.17
 	pkgrel = 1
 	url = https://github.com/CachyOS/linux-cachyos
 	arch = x86_64
@@ -19,7 +19,7 @@ pkgbase = linux-cachyos-bore-lts
 	makedepends = tar
 	makedepends = xz
 	options = !strip
-	source = https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.16.tar.xz
+	source = https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.17.tar.xz
 	source = config
 	source = https://raw.githubusercontent.com/ptr1337/kernel-patches/master/5.15/bore/0001-bore-sched.patch
 	source = https://raw.githubusercontent.com/ptr1337/kernel-patches/master/5.15/0001-arch-patches.patch
@@ -52,7 +52,7 @@ pkgbase = linux-cachyos-bore-lts
 	source = https://raw.githubusercontent.com/ptr1337/kernel-patches/master/5.15/0001-sbitmap-patches.patch
 	source = https://raw.githubusercontent.com/ptr1337/kernel-patches/master/5.15/0001-zstd.patch
 	source = auto-cpu-optimization.sh
-	md5sums = be0a904c58655c74c0986ad62500bcca
+	md5sums = 494b21b74acf5d32d7cb80497fbff429
 	md5sums = 5402af533ceb55bf08d42d626889c33f
 	md5sums = f98ffed5a49d131e97ca6cb3ddb37047
 	md5sums = ef9fa3407854cea8e78112c25bb72e41
@@ -99,5 +99,5 @@ pkgname = linux-cachyos-bore-lts
 
 pkgname = linux-cachyos-bore-lts-headers
 	pkgdesc = Headers and scripts for building modules for the Linux BORE scheduler Kernel by CachyOS and with some other patches and other improvements
-	depends = linux-cachyos-bore-lts=5.15.16
+	depends = linux-cachyos-bore-lts=5.15.17
 	depends = pahole
