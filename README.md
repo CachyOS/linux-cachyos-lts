@@ -114,12 +114,8 @@ sudo pacman -U 'https://mirror.cachyos.org/repo/x86_64/cachyos/cachyos-keyring-2
   add following under the arch repos the "-v3" repos only if they are supported:
   ```
   # cachyos repos
-  [cachyos-desktop-v3]
-  Include = /etc/pacman.d/cachyos-v3-mirrorlist
   [cachyos-v3]
   Include = /etc/pacman.d/cachyos-v3-mirrorlist
-  [cachyos-desktop]
-  Include = /etc/pacman.d/cachyos-mirrorlist
   [cachyos]
   Include = /etc/pacman.d/cachyos-mirrorlist
   ``\`
