@@ -122,7 +122,7 @@ else
   pkgbase=linux-cachyos-bore-lts
 fi
 _major=5.15
-_minor=17
+_minor=18
 pkgver=${_major}.${_minor}
 _srcname=linux-${pkgver}
 arch=(x86_64 x86_64_v3)
@@ -671,7 +671,7 @@ for _p in "${pkgname[@]}"; do
 done
 
 
-md5sums=('494b21b74acf5d32d7cb80497fbff429'
+md5sums=('9316bb25ea1eeb2a64612b3ec0917d54'
          '5402af533ceb55bf08d42d626889c33f'
          'f98ffed5a49d131e97ca6cb3ddb37047'
          'ef9fa3407854cea8e78112c25bb72e41'
