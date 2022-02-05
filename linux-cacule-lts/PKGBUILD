@@ -122,7 +122,7 @@ else
   pkgbase=linux-cacule-lts
 fi
 _major=5.15
-_minor=18
+_minor=20
 pkgver=${_major}.${_minor}
 _srcname=linux-${pkgver}
 arch=(x86_64 x86_64_v3)
@@ -670,7 +670,7 @@ for _p in "${pkgname[@]}"; do
 done
 
 
-md5sums=('9316bb25ea1eeb2a64612b3ec0917d54'
+md5sums=('03a9786d8ec91733a46c98de999d4b3a'
          '788dcd568f1c00441ad9746706e4f1bc'
          'afdbe964cd00357ef7248553ab9db091'
          'ef9fa3407854cea8e78112c25bb72e41'

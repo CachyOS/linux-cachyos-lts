@@ -122,7 +122,7 @@ else
   pkgbase=linux-cachyos-bore-lts
 fi
 _major=5.15
-_minor=18
+_minor=20
 pkgver=${_major}.${_minor}
 _srcname=linux-${pkgver}
 arch=(x86_64 x86_64_v3)
@@ -146,11 +146,11 @@ _patchsource="https://raw.githubusercontent.com/ptr1337/kernel-patches/master/5.
 source=(
   "https://cdn.kernel.org/pub/linux/kernel/v${pkgver%%.*}.x/${_srcname}.tar.xz"
   "config"
-  "${_patchsource}/bore/0001-bore-sched.patch"
+  "${_patchsource}/bore/0001-muqss.patch"
   "${_patchsource}/0001-arch-patches.patch"
   "${_patchsource}/0001-cfi.patch"
   "${_patchsource}/0001-lru-patches.patch"
-  "${_patchsource}/AMD/0001-amdpstate.patch"
+#  "${_patchsource}/AMD/0001-amdpstate.patch"
   "${_patchsource}/AMD/amd-sched.patch"
   "${_patchsource}/AMD/0001-amd64-patches.patch"
   "${_patchsource}/0001-bbr2.patch"
@@ -164,9 +164,7 @@ source=(
   "${_patchsource}/0001-fixes-miscellaneous.patch"
   "${_patchsource}/0001-futex-wait.v-fsync-winesync.patch"
   "${_patchsource}/0001-hwmon-patches.patch"
-  "${_patchsource}/0001-ksmbd-patches.patch"
   "${_patchsource}/0001-pf-patches.patch"
-  "${_patchsource}/0001-page-table-check.patch"
   "${_patchsource}/0001-lqx-patches.patch"
   "${_patchsource}/0001-lrng-patches.patch"
   "${_patchsource}/0001-v4l2loopback.patch"
@@ -671,13 +669,12 @@ for _p in "${pkgname[@]}"; do
 done
 
 
-md5sums=('9316bb25ea1eeb2a64612b3ec0917d54'
+md5sums=('03a9786d8ec91733a46c98de999d4b3a'
          '5402af533ceb55bf08d42d626889c33f'
-         'f98ffed5a49d131e97ca6cb3ddb37047'
+         'd3f91696cae6bc713024e763d1421257'
          'ef9fa3407854cea8e78112c25bb72e41'
          'e3fa8507aed6ef3ce37e62f18fe9b7e1'
          '1f3becd94390729d940a60b1e9b872b1'
-         'e4345010ef3270f6ccc5b26396c63a51'
          'dccfe71705b24d3fb1f51aaf2016216d'
          '53f037488a66667220c263f92ded333d'
          '2a8097ba46be56fbbe3967e9c34c9a0b'
@@ -691,9 +688,7 @@ md5sums=('9316bb25ea1eeb2a64612b3ec0917d54'
          '8bda7327ae759b1b52e3b617952bd964'
          '8c354c3d1962ec6785db7f0c3fbbab03'
          'b6b2c2c6b4761aa5a8dea6ac0add8736'
-         '5b5ea6f0b8ae6b726aab697a946f750d'
          '08c84362cb916b30d9c77e35b1b3bc54'
-         '7d28f804d6b74f9a22ad30d67af5a669'
          '2130bb325438a2fc880593c5e345521f'
          'b09b84168822521426f197610727618b'
          'd9a892f66631615a72bdc93ee7397afa'
